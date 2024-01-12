@@ -1,0 +1,21 @@
+{
+  "name": "company-tweets",
+  "description": "A tool to write engaging company tweets for you",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["webRequest"],
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "popup.html"
+  }
+}

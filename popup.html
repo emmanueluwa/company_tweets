@@ -1,6 +1,31 @@
 <html>
-  <head> </head>
+  <head>
+    <style>
+      .loading-screen {
+        display: none;
+        width: 220px;
+        align-items: center;
+        justify-content: center;
+        height: 220px;
+      }
+
+      textarea {
+        display: flex;
+        width: 220px;
+        height: 220px;
+      }
+    </style>
+  </head>
   <body>
     <h1>company teweets</h1>
+    <div class="content">
+      <div class="loading-screen">Loading...</div>
+      <div class="tweet-screen">
+        <textarea class="tweet-area"> </textarea>
+      </div>
+
+      <button id="get-tweet">Give me a tweet pls</button>
+    </div>
   </body>
+  <script src="popup.js"></script>
 </html>

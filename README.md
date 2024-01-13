@@ -1,12 +1,14 @@
 # Company Tweeter
 
+## What am i building?
+
 - Utilising a transformer model to generate informative /entrtaining tweets for a company / individual
 
 - Automatically insert them into the web page
 
 - Potentially have a personal assistant mode that tweets automatically when button is clicked
 
-# Technology
+## Technology used
 
 - This will be a chrome extension
 

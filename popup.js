@@ -8,7 +8,7 @@ function generateTweet() {
   loadingScreen.style.display = "flex";
   tweetArea.style.display = "none";
 
-  new Promise((resolve) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       const finalTweet = "test";
       //todo: instructions to get final tweet
@@ -32,5 +32,6 @@ function renderTweetOnPage() {
 
 getTweetButton.addEventListener("click", async (e) => {
   const finalTweet = await generateTweet();
-  showTweet();
+  console.log(finalTweet);
+  showTweet(finalTweet);
 });
